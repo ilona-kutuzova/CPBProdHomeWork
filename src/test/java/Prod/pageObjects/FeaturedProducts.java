@@ -22,13 +22,13 @@ public class FeaturedProducts {
     @CacheLookup
     WebElement iFrame;
 
-    @FindBy(xpath = "/html/body/main/div[2]/div/div/div/div/ul/li[8]/div/div/div[2]/div[1]/h3/a")
+    @FindBy(xpath = "/html/body/main/section[2]/div/div/slider-component/ul/li[8]/div/div/div[2]/div[1]/h3/a")
     @CacheLookup
     WebElement phoneCaseProduct;
 
-    public void switchToIFrame() {
-        driver.switchTo().frame(iFrame);
-    }
+//    public void switchToIFrame() {
+//        driver.switchTo().frame(iFrame);
+//    }
 
     public void clickOnPhoneCaseProduct() {
         wait.until(ExpectedConditions.elementToBeClickable(phoneCaseProduct));
